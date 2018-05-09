@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% load static %}
+<title>Upload Image</title>
+<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<!-- thu vien -->
+
+<body>
+<div class="flex-container">
+ <h1>Đăng ảnh</h1>
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Upload</button>
+  </form>
+
+</div>
+</body>
+</html>

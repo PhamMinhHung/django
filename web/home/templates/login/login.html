@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% load static %}
+<title>Đăng ký</title>
+<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<!-- thu vien -->
+
+<body>
+<div class="flex-container">
+ <h1>Đăng nhập tài khoản</h1>
+ <center>
+     <form  method="POST">
+         {%csrf_token %}
+         {% for key,value in form.errors.items%}
+                {{value}}
+         {%endfor%}
+         <!--in loi-->
+         <p><lable>Tài Khoản</lable>{{form.username}}</p>
+         <p><lable>Mật Khẩu</lable>{{form.password}}</p>
+         <input type="hidden" name="next" value="/"/>
+         <input type="submit" value="Đăng nhập"/>
+     </form>
+ </center>
+</div>
+
+</body>
+</html>

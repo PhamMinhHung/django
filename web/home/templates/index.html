@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% load static %}
+<title>Home</title>
+<link rel="stylesheet" href="{% static 'style.css' %}">
+   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="row">
+      <div  class="col-sm-4"></div>
+    <div  class="col-sm-4">
+      <center><h>Django practice test</h></center>
+   </div>
+    <div  class="col-sm-4">
+    {%if user.username %}
+    <p>Xin chào {{user.username}}</p>
+    <p><a href="{% url 'logout'%}"> Đăng xuất</a></p>
+    {%else%}
+    <p><a href="{% url 'login'%}"> Đăng nhâp</a>|<a href="{% url 'dangky'%}"> Đăng ký</a></p>
+    {%endif%}
+    </div>
+  </div>
+  </div>
+
+<div class="flex-container">
+<header>
+<div class="container">
+  <a href="http://127.0.0.1:8000/"><button class="button button1">Home</button></a>
+  <a href="http://127.0.0.1:8000/album/"><button class="button button1">Album</button></a>
+  <a href="http://127.0.0.1:8000/upload/"><button class="button button1">Upload</button></a>
+  <button class="button button1">About</button>
+</div>
+</header>
+<nav class="nav">
+     <h3>5 websites Django</h3>
+<ul>
+  <li><a href="https://www.dropbox.com/">DropBox</a></li>
+  <li><a href="https://www.google.com/">Google</a></li>
+  <li><a href="https://www.youtube.com/">YouTube</a></li>
+  <li><a href="https://maps.yahoo.com/">Yahoo Maps</a></li>
+  <li><a href="https://bitbucket.org/">Bitbucket</a></li>
+</ul>
+</nav>
+
+<article class="article">
+  <h1>London</h1>
+  <p>London is the capital city of England. It is the most populous city in the United Kingdom,
+  with a metropolitan area of over 13 million inhabitants.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia,
+  its history going back to its founding by the Romans, who named it Londinium.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia,
+  its history going back to its founding by the Romans, who named it Londinium.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia,
+  its history going back to its founding by the Romans, who named it Londinium.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia,
+  its history going back to its founding by the Romans, who named it Londinium.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia,
+  its history going back to its founding by the Romans, who named it Londinium.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia,
+  its history going back to its founding by the Romans, who named it Londinium.</p>
+
+  <p>London is the capital city of England. It is the most populous city in the United Kingdom,
+  with a metropolitan area of over 13 million inhabitants.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia,
+  its history going back to its founding by the Romans, who named it Londinium.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia,
+  its history going back to its founding by the Romans, who named it Londinium.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia,
+  its history going back to its founding by the Romans, who named it Londinium.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia,
+  its history going back to its founding by the Romans, who named it Londinium.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia,
+  its history going back to its founding by the Romans, who named it Londinium.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia,
+  its history going back to its founding by the Romans, who named it Londinium.</p>
+
+  <p>London is the capital city of England. It is the most populous city in the United Kingdom,
+  with a metropolitan area of over 13 million inhabitants.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia,
+  its history going back to its founding by the Romans, who named it Londinium.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia,
+  its history going back to its founding by the Romans, who named it Londinium.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia,
+  its history going back to its founding by the Romans, who named it Londinium.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia,
+  its history going back to its founding by the Romans, who named it Londinium.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia,
+  its history going back to its founding by the Romans, who named it Londinium.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia,
+  its history going back to its founding by the Romans, who named it Londinium.</p>
+  <p><strong>Resize this page to see what happens!</strong></p>
+</article>
+<footer>Copyright &copy;HTML</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+{% load static %}
+<title>Home</title>
+<link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<!-- thu vien -->
+
+<body>
+<div class="flex-container">
+<header>
+<div class="container">
+    <h1>Album and video</h1>
+    <a href="http://127.0.0.1:8000/"><button class="button button1">Home</button></a>
+  <a href="http://127.0.0.1:8000/album/"><button class="button button1">Album</button></a>
+  <button class="button button1">Contact</button>
+  <button class="button button1">About</button>
+</div>
+</header>
+<h2>Avengers: Infinity War</h2>
+<img src="http://digitalspyuk.cdnds.net/18/14/1600x800/landscape-1522924460-avengers-infinity-war-poster.jpg">
+<img src="https://thuocphim.com/wp-content/uploads/2017/05/Agents-Of-SHIELD-Ghost-Rider-%C4%91%C6%B0%E1%BB%A3c-x%C3%A1c-nh%E1%BA%ADn-s%E1%BA%BD-tham-gia-t%E1%BA%ADp-cu%E1%BB%91i.jpg">
+<!-- tao phan rieng -->
+        {% for post in Post %}
+    <h4> {{post.title}}</h4>
+        <h4> {{post.image}}</h4>
+    <img src="/media/{{post.image}}">
+    {%endfor%}
+
+<footer>Copyright &copy;HTML</footer>
+</div>
+</body>
+</html>

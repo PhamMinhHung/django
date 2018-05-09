@@ -1,0 +1,88 @@
+
+body {
+	 background: url(back.jpg);
+	 background: url(back.jpg);
+	 height: 100%;
+    /*background-position: center;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+p {
+	font-size: 14px;
+   color: black;
+}
+h {
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+h3 {
+    font-size: 10px;
+    color: white;
+
+}
+
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+
+    text-align: left;
+}
+
+header {color:white;}
+article{
+background: url(Vien1.gif);
+height: 100%;
+background-repeat: no-repeat;
+background-size: cover;
+}
+footer {background: #aaa;color:white;}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:0.5 auto;-webkit-order:0;order:0;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+}
+.button {
+    background-color: #1194FF; /* Xanh */*/
+    border: none;
+    /*color: white;*/
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 0px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    color: black; 
+    border: 2px solid MediumSeaGreen; /*vien nut*/*/
+}
+
+.button1:hover {
+	/*cham chuot len*/
+    background-color: #4CAF50; 
+    color: white;
+}
